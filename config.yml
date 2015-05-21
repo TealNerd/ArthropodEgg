@@ -5,3 +5,4 @@ eggLootingPercentage: 0.02
 eggEntityIDList: [65, 90, 91, 92, 93, 94, 95, 96, 98, 101, 120]
 eggDebug: false
 eggRemoveDrops: true
+saveHorseStats: true
