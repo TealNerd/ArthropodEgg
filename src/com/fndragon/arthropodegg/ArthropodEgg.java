@@ -138,6 +138,18 @@ public class ArthropodEgg extends JavaPlugin {
 				}
 					
 			}
+			if(args[0].equalsIgnoreCase("savehorsestats")) {
+				if(args.length < 2) {
+					return false;
+				}
+				boolean savehorsestats = args[1].equalsIgnoreCase("on") || args[1].equalsIgnoreCase("true");
+				this.getConfig().set("saveHorseStats", savehorsestats);
+				if(savehorsestats) {
+					sender.sendMessage("Horse stats will be saved upon egging");
+				} else {
+					sender.sendMessage("Horse stats will not be saved upon egging");
+				}
+			}
 			return true;
 		}
 		return false;
